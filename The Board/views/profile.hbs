@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e9faa46f89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="nav">
+        {{>header}}
+    </header>
+
+    <!-- Header end -->
+
+    <main>
+        <div class="user-profile">
+            <div class="name-image-container">
+                <img class="user-pic" src="images/profile/bobjones.png">
+                <p><a href="#">Edit Profile Picture</a></p>
+            </div>
+            <div class="profile-information">
+                <h1>User Information</h1>
+                <ul>
+                    <li><b>Username</b><span class="tab"></span>Bob Jones</li>
+                    <li><b>First Name</b><span class="tab"></span>Bob</li>
+                    <li><b>Last Name</b><span class="tab"></span>Jones</li>
+                    <li><b>Email</b><span class="tab"></span>bobjones@gmail.com</li>
+                </ul>
+                <p><a href="editprofile.html">Edit Information</a></p>
+            </div>
+        </div>
+        <div class="recent-post-bar">
+            <h1>User's Recent Posts</h1>
+        </div>
+        <div class="user-posts-container">
+            <div class="post-image-container">
+                <img class="post-pic" src="images/home/forum.png">
+            </div>
+            <div class="user-posts">
+                <h2>How to git gud</h2>
+                <p>"I am a 0.9 k/d player. Teach me tips to get better"</p>
+                <p class="post-info">by: <a href="#">Bob Jones</a><span class="tab"></span>||<span class="tab"></span><a
+                        href="#">Comments</a></p>
+            </div>
+        </div>
+        <div class="user-posts-container">
+            <div class="post-image-container">
+                <img class="post-pic" src="images/home/forum.png">
+            </div>
+            <div class="user-posts">
+                <h2>360 no scope montage</h2>
+                <p>"Watch these noobs get destroyed in style."</p>
+                <p class="post-info">by: <a href="#">Bob Jones</a><span class="tab"></span>||<span class="tab"></span><a
+                        href="#">Comments</a></p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

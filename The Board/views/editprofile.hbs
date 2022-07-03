@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e9faa46f89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="nav">
+        {{>header}}
+    </header>
+
+    <!-- Header end -->
+
+    <main>
+        <div class="user-profile">
+            <div class="name-image-container">
+                <img class="user-pic" src="images/profile/bobjones.png">
+                <p><a href="#">Edit Profile Picture</a></p>
+            </div>
+            <div class="profile-information">
+                <h1>User Information</h1>
+                <form class="edit-profile">
+                    <label>Username</label>
+                    <input type="text" name="" placeholder="">
+                    <label>First Name</label>
+                    <input type="text" name="" placeholder="">
+                    <label>Last Name</label>
+                    <input type="text" name="" placeholder="">
+                    <label>Email</label>
+                    <input type="email" name="" placeholder="">
+                    <input type="button" value="Confirm">
+                </form>
+                <p><a href="editprofile.html">Edit Information</a></p>
+            </div>
+        </div>
+        <div class="recent-post-bar">
+            <h1>User's Recent Posts</h1>
+        </div>
+        <div class="user-posts-container">
+            <div class="post-image-container">
+                <img class="post-pic" src="images/home/forum.png">
+            </div>
+            <div class="user-posts">
+                <h2>Post title</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p class="post-info">by: <a href="#">Bob Jones</a><span class="tab"></span>||<span class="tab"></span><a
+                        href="#">Comments</a></p>
+            </div>
+        </div>
+        <div class="user-posts-container">
+            <div class="post-image-container">
+                <img class="post-pic" src="images/home/forum.png">
+            </div>
+            <div class="user-posts">
+                <h2>Post title</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p class="post-info">by: <a href="#">Bob Jones</a><span class="tab"></span>||<span class="tab"></span><a
+                        href="#">Comments</a></p>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

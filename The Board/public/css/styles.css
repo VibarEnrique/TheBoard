@@ -1,0 +1,423 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Titillium Web';
+    background-color: white;
+    font-size: 16px;
+}
+
+a{
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* NAVIGATION BAR */
+
+header{
+    background-color: rgb(74, 145, 252);
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    margin-right:42px;
+    margin-left:42px;
+    border-radius: 5px;
+}
+
+
+.nav{
+    background-color: rgb(74, 145, 252);
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    margin-right:42px;
+    margin-left:42px;
+    border-radius: 5px;
+    font-family: 'Titillium Web';
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav h1{
+    font-family: 'Goldman';
+    color:white;
+    font-size: 50px;
+}
+
+
+.nav button{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-list{
+    text-decoration: none;
+}
+
+.nav-list li{
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left:30px;
+    position: relative;
+}
+
+.nav-list li:hover ul{
+    display:block;
+}
+
+.nav-list li a{
+    color:white;
+    transition: all 0.3 ease 0s;
+}
+
+.nav-list li a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+
+button{
+    padding: 9px 25px;
+    color:white;
+    background-color: #AA4A44;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+
+/* LOGGED IN NAV */
+
+.nav-list-2 {
+    position: absolute;
+    right:0px;
+    width:160px;
+    background-color: rgb(74, 145, 252);
+    text-align: center;
+    display:none;
+}
+
+.nav-list-2 li{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+/* HOME */
+.home-container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum-container{
+    margin-top: 20px;
+}
+
+.subforum-title{
+    background-color: #AA4A44;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.subforum-title-text{
+    margin-left:10px;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column{
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+
+.subforum-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon-img{
+    width:50px;
+}
+
+.subforum-divider{
+    display: none;
+}
+
+/* SIGNUP PAGE */
+
+.signup-form{
+    width: 360px;
+    height: 520px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #AA4A44;
+    border-radius: 3px;
+    color:white;
+}
+
+.signup-form h1{
+    text-align: center;
+    padding-top:15px;
+}
+
+form{
+    width:320px;
+    margin-left:20px;
+}
+
+form label{
+    display:flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline:none;
+}
+
+input[type="button"]{
+    width:320px;
+    height: 35px;
+    margin-top:20px;
+    border:none;
+    background-color:rgba(0,136,169,1);
+    color:white;
+    font-size:18px;
+    cursor: pointer;
+}
+
+.account-exist p,.signup-form p{
+    text-align:center;
+    padding-top:20px;
+    font-size: 15px;
+}
+.signup-form a{
+    color:white;
+    text-decoration: underline;
+}
+
+/* LOGIN PAGE */
+
+.login-form{
+    width:360px;
+    height: 320px;
+    margin:auto;
+    margin-top:40px;
+    background-color: #AA4A44;
+    border-radius: 3px;
+    color:white;
+}
+
+.login-form h1{
+    text-align: center;
+    padding-top:15px;
+}
+
+/*Profile*/ 
+
+.user-profile {
+    background-color: #f5f5f5;
+    align-content: center;
+    margin-top:40px;
+    margin-left:160px;
+    width:1200px;
+    display: flex;
+}
+
+.name-image-container{
+	font-size: 14px;
+	background-color:#AA4A44;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	padding: 30px;
+}
+
+.name-image-container a:link{
+	color:white;
+}
+
+.name-image-container a:hover{
+    color:white;
+	text-decoration: underline;
+}
+
+.profile-information h1 {
+	font-size: 30px;
+	padding: 10px;
+    margin-top:8px;
+    margin-left:10px;
+}
+
+.profile-information p {
+	font-size: 15px;
+	text-align: left;
+    margin-top:40px;
+    margin-left:20px;
+    padding-bottom: 10px;
+}
+
+.profile-information a:hover {
+	text-decoration: underline;
+}
+
+.profile-information ul{
+    margin-top:20px;
+
+}
+
+.profile-information ul li {
+
+	list-style: none;
+    margin-left: 20px;
+
+}
+
+.user-pic{
+    margin-top: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+/* Recent Post Bar*/
+
+.recent-post-bar{
+    background-color: #f5f5f5;
+    align-content: center;
+    margin-top:10px;
+    margin-left:160px;
+    width:1200px;
+}
+
+.recent-post-bar h1{
+    margin-left:10px;
+}
+
+/* Posts */
+
+.user-posts-container{
+    background-color: #f5f5f5;
+    align-content: center;
+    margin-top:10px;
+    margin-left:160px;
+    width:1200px;
+    display: flex;
+}
+
+.post-image-container{
+	font-size: 14px;
+	background-color:#AA4A44;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 150px;
+	padding: 30px;
+}
+
+.post-pic{
+    margin-top: 20px;
+	width: 70px;
+	padding: 5px;
+}
+
+.user-posts{
+    height:auto;
+}
+
+.user-posts h2{
+    margin-left: 10px;
+    margin-top:10px;
+}
+.user-posts p{
+    margin-left: 10px;
+    margin-top:10px;
+    font-size: 14px;
+}
+
+.post-content textarea{
+    width: 24em;
+    height: 25em;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.post-info{
+    padding-bottom: 10px;
+}
+
+/* Edit Profile */
+
+.edit-profile{
+    width:200px;
+    margin-left:20px;
+}
+
+.edit-profile label{
+    display:flex;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.edit-profile input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline:none;
+}
+
+.edit-profile input[type="button"]{
+    width:80px;
+    height: 35px;
+    margin-top:20px;
+    border:none;
+    background-color:rgba(0,136,169,1);
+    color:white;
+    font-size:18px;
+    cursor: pointer;
+}

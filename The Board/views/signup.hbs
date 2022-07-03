@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e9faa46f89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="nav">
+        {{>header}}
+    </header>
+
+    <!-- Header end -->
+
+    <main>
+        <div class="signup-form">
+            <h1>Sign Up</h1>
+            <form action="/create-user" onsubmit="validateReg()" id="SignUpForm" method="POST">
+                <label>Username</label>
+                <input type="text" name="Username" id="Username" placeholder="">
+                <label>Email</label>
+                <input type="email" name="Email" id="Email" placeholder="">
+                <label>Password</label>
+                <input type="password" name="Password" id="Password" placeholder="">
+                <label>Confirm Password</label>
+                <input type="password" name="confirmPass" id="confirmPass" placeholder="">
+                <input type="button" value="Submit">
+            </form>
+            <p>By clicking the Singup BUtton, you agree to our<br>
+                <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+            </p>
+        </div>
+
+        <div class="account-exist">
+            <p>Already have an account?<a href="login.html"> Log In Here</a></p>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e9faa46f89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+        
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="nav">
+        {{>header}}
+    </header>
+
+    <!-- Header end -->
+    <br><br><br>
+    <div class="" style="margin-top: -50px;">
+        <div class="">
+            <h4 style="color: rgb(141, 42, 42); font-size: x-large; text-align: left;">Create your post</h4>
+            <hr>
+            <form action="/submit-post" id="createPostForm" method="post" onsubmit="validatePost()" enctype="multipart/form-data">
+                <div>
+                    <span class="">Post Title* </span><input type="text" name="PostTitle" id="PostTitle"
+                        class="bar-border" style="color:black" placeholder="Enter post title">
+                </div>
+
+                <div class="post-content">
+                    <span class="">Content* </span> <br>
+                    <textarea name="Content" id="Content" placeholder="Enter post content"></textarea>
+                </div>
+
+                <div class="category-title">
+                    <span class="input-bar">Forum* </span>
+                    <label>
+                        <input list="Forum" name="Forum" class="category-bar" /></label>
+                    <datalist id="Forum">
+                        <option value="Games"></option>
+                        <option value="Movies"></option>
+                        <option value="Technology"></option>
+                    </datalist>
+                </div>
+                <div class="add-file">
+                    <span class="attach">Attachment</span><input type="file" name="PostImg" id="PostImg">
+                </div>
+                <div>
+                    <div class="">
+                        <input type="text" name="SubForum" id="SubForum" class="bar-border" style="color:black"
+                            placeholder="Enter SubForum">
+                    </div>
+                </div>
+                <div class="publish-button">
+                    <button type="submit" class="publish-button2">Publish Post </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
