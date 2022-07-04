@@ -40,6 +40,10 @@ app.get('/contact', function(req,res) {
 	res.render('contact')
 })
 
+app.get('/help', async(req,res) => {
+	res.render('help')
+})
+
 app.get('/profile', async(req,res) => {
 	const userpost = await Post.find({})
 	res.render('profile', {userpost})
