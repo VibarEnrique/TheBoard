@@ -421,3 +421,47 @@ input[type="button"]{
     font-size:18px;
     cursor: pointer;
 }
+
+/* Contacts page*/
+
+.team{
+    margin:45px 0px;
+}
+
+.profile-row {
+    display: flex;
+    margin-left:200px;
+  }
+  
+  .profile-column {
+    flex: 33.33%;
+    padding: 30px;
+  }
+
+.contact-container h1{
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:2px;
+    color: black;
+    padding-bottom:10px;
+    font-family: 'Titillium Web';
+    font-size: 50px;
+    
+}
+
+.img-box {
+    opacity:1;
+    display: block;
+    position:relative;
+}
+
+.profile h2{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.contact-image{
+    width:50%;
+    height:400px;
+}
